@@ -29,3 +29,7 @@ ToC
 * Parts 8-12 generalize the concept from part 7. These parts are *optional*, you can safely skip to part 13.
 * Parts 13 and 14 continue with nested containers.
 * Parts 15 to 17 show the concepts in a Play context.
+
+Scalaz documentation
+---
+You can find Scalaz documentation on the http://docs.typelevel.org/
