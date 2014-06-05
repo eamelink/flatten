@@ -3,7 +3,7 @@ Flatten your code
 
 This project is a hands-on tutorial with exercises and answers, that teaches how to flatten stacked containers like `Future[Option[A]]` so that they can be used in `for`-comprehensions.
 
-There's an accompanying presentation: https://speakerdeck.com/eamelink/flattening-your-code
+There's an accompanying presentation: https://speakerdeck.com/eamelink/flatten-your-code
 
 Prerequisites
 ---
