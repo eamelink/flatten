@@ -79,7 +79,7 @@ trait Part08 {
   // In scala, this can be made nicer by making the glue object implicit:
   object GlueObjects2 {
     trait Serializable[A] {
-      def serialize[A](value: A): Array[Byte]
+      def serialize(value: A): Array[Byte]
     }
 
     def toBytes[A](value: A)(implicit serializer: Serializable[A]) = serializer.serialize(value)
@@ -88,11 +88,11 @@ trait Part08 {
     def toBytes2[A : Serializable](value: A) = implicitly[Serializable[A]].serialize(value)
 
     implicit val StringSerializable = new Serializable[String] {
-      override def serialize[String](value: String) = value.toString.getBytes
+      override def serialize(value: String) = value.getBytes
     }
 
     implicit val IntSerializable = new Serializable[Int] {
-      override def serialize[Int](value: Int) = value.toString.getBytes
+      override def serialize(value: Int) = value.toString.getBytes
     }
 
     // Using this:
