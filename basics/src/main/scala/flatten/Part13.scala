@@ -43,8 +43,8 @@ trait Part13 {
   // Again, we want to use them in a for comprehension.
 
   // Now we need to do two things:
-  // 1) Upgrade the `Option[A]` values to `Option[Future[A]]`, so they're all the same container type
-  // 2) Put all `Option[Future[A]]` into an Option Transformer, OptionT.
+  // 1) Upgrade the `Option[A]` values to `Future[Option[A]]`, so they're all the same container type
+  // 2) Put all `Future[Option[A]]` into an Option Transformer, OptionT.
 
   // Exercise: Make a for-comprehension
 }
