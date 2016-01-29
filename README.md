@@ -12,7 +12,7 @@ Prerequisites
 
 Usage
 --- 
-Most of the code is not runnable: we only rely on the typechecker. That means it's critical to look at the code in an IDE that can show you the type of values.
+Most of the code is not runnable: we only rely on the typechecker. That means it's critical to look at the code in an IDE (or [ENSIME](http://ensime.org)) that can show you the type of values.
 
 
 Structure
