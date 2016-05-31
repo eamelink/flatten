@@ -56,17 +56,17 @@ trait Part08 {
   // Also, the library that accepts objects-that-can-be-serialized doesn't need to know about all these types in advance
   object GlueObjects {
     trait Serializable[A] {
-      def serialize[A](value: A): Array[Byte]
+      def serialize(value: A): Array[Byte]
     }
 
     def toBytes[A](value: A, serializer: Serializable[A]): Array[Byte] = serializer.serialize(value)
 
     val StringSerializable = new Serializable[String] {
-      override def serialize[String](value: String) = value.toString.getBytes
+      override def serialize(value: String) = value.getBytes
     }
 
     val IntSerializable = new Serializable[Int] {
-      override def serialize[Int](value: Int) = value.toString.getBytes
+      override def serialize(value: Int) = value.toString.getBytes
     }
 
     // Using this:
