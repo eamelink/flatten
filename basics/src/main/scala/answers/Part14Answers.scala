@@ -1,11 +1,10 @@
 package answers
 
 import flatten.Part14
-import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
-import scalaz.contrib.std.futureInstance
 import scalaz.Scalaz._
 import scalaz._
+import scala.concurrent.Future
 
 trait Part14Answers extends Part14 {
 

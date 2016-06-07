@@ -1,9 +1,9 @@
 package flatten
 
-import scalaz.OptionT
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
-import scalaz.contrib.std.futureInstance
+import scalaz._
+import Scalaz._
 
 /*
  * If you skipped parts 8 - 12, welcome back!

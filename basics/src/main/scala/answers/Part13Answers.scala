@@ -4,7 +4,7 @@ import flatten.Part13
 import scalaz.OptionT
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
-import scalaz.contrib.std.futureInstance
+import scalaz.std.scalaFuture._
 
 trait Part13Answers extends Part13 {
 
